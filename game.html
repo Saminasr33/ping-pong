@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ping pong</title>
+    <style>
+        .container {
+            border: 3px solid rgb(0, 128, 124);
+            margin: auto;
+            width: fit-content;
+        }
+
+        #pause {
+            cursor: pointer;
+            border: 2px dashed #59ce8f;
+            color: #59ce8f;
+            border-radius: 10px;
+            width: fit-content;
+            margin: auto;
+            padding: 15px;
+            margin-top: 15px;
+            font-size: 30px;
+            transition: all 0.2s ease;
+        }
+
+        #pause:hover {
+            color: white;
+            background-color: #59ce8f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="pong" width="600px" height="400px">
+
+        </canvas>
+    </div>
+    <div id="pause">pause</div>
+    <script src="js.js"></script>
+</body>
+
+</html>
